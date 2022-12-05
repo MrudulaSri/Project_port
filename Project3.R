@@ -22,6 +22,7 @@ pride_clean <- tm_map(pride_clean, content_transformer(tolower))
 pride_clean <- tm_map(pride_clean, removeNumbers)
 
 #remove stop words
+# remove SMART stop words and 'chapter'
 pride_clean <- tm_map(pride_clean, removeWords, c(stopwords('SMART'), 'chapter'))
 
 #term-document matrix
