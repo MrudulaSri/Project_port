@@ -43,7 +43,6 @@ vec <- sort(rowSums(mat), decreasing = TRUE)
 
 #data frame
 pride_and_prejudice <- tibble(term = names(vec), freq = vec)
-
 print(pride_and_prejudice, n = 28)
 
 #wordcloud
